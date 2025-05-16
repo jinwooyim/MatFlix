@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<mappers>
+		<!-- 로그인 & 회원가입 -->
+		<mapper resource="mybatis/mappers/member.xml"/>
+		<mapper resource="mybatis/mappers/KakaoUserMapper.xml"/>
+
+		<!-- 팔로우 -->
+		<mapper resource="mybatis/mappers/follow.xml"/>
+
+		<!-- 알림 -->
+		<mapper resource="mybatis/mappers/notification.xml"/>
+		
+		<!-- 즐겨찾기 -->
+		<mapper resource="mybatis/mappers/favoriteMapper.xml"/>
+				
+		<!-- 게시판 & 댓글 & 페이징 -->
+		<mapper resource="mybatis/mappers/board.xml"/>
+		<mapper resource="mybatis/mappers/comment.xml"/>
+		<mapper resource="mybatis/mappers/upload.xml"/>
+		<mapper resource="mybatis/mappers/page.xml"/>
+		
+		<!-- 추천 -->
+		<mapper resource="mybatis/mappers/recommend.xml"/>		
+		
+		<!-- 레시피 -->
+		<mapper resource="mybatis/mappers/recipe.xml"/>
+		<mapper resource="mybatis/mappers/rc_upload.xml"/>
+		<mapper resource="mybatis/mappers/rc_board.xml"/>
+		<mapper resource="mybatis/mappers/rc_comment.xml"/>
+		<mapper resource="mybatis/mappers/rc_page.xml"/>
+		
+		<!-- 공지사항 -->
+		<mapper resource="mybatis/mappers/notice_board.xml"/>
+		<mapper resource="mybatis/mappers/notice_page.xml"/>
+	</mappers>
+</configuration>
